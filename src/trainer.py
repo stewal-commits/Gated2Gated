@@ -26,7 +26,7 @@ class Trainer:
 
     def __init__(self, options) -> None:
         self.opt = options
-        self.log_path = os.path.join(self.opt.log_dir, self.opt.exp_name, "exp-{}_{}".format(self.opt.exp_num,self.opt.exp_metainfo))
+        self.log_path = os.path.join(self.opt.log_dir, self.opt.exp_name, "exp-{}".format(self.opt.exp_num))
 
         # checking height and width are multiples of 32
         assert self.opt.height % 32 == 0, "'height' must be a multiple of 32"
@@ -115,7 +115,7 @@ class Trainer:
             
             if self.opt.train_depth_normalizer:
                 self.parameters_to_train += [self.depth_normalizer]
-
+        
         if self.use_pose_net and self.opt.temporal_loss:
             if self.opt.pose_model_type == "separate_resnet":
                 self.models["pose_encoder"] = networks.ResnetEncoder(self.opt.num_layers,
@@ -151,7 +151,7 @@ class Trainer:
 
         # data
         datasets_dict = {"gated":      dataset.GatedDataset,
-                        "gated": dataset.GatedStereoDataset}
+                        "gatedstereo": dataset.GatedStereoDataset}
         self.dataset = datasets_dict[self.opt.dataset]
         if self.opt.split != 'gatedstereo':
             fpath = os.path.join(os.path.dirname(__file__), "splits", self.opt.split, "{}_files.txt")
@@ -241,8 +241,6 @@ class Trainer:
         print("Using split:\n  ", self.opt.split)
         print("There are {:d} training items and {:d} validation items\n".format(
             len(train_dataset), len(val_dataset)))
-        sdfsdfsdf
-
         self.save_opts()
 
     def set_train(self):

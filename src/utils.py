@@ -12,6 +12,8 @@ from six.moves import urllib
 import torch
 import cv2
 import io
+import matplotlib
+matplotlib.use('AGG')
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.lines import Line2D

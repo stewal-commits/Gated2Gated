@@ -9,7 +9,7 @@ python src/train.py \
 --model_type                multinetwork \
 --exp_name                  multinetwork \
 --models_to_load            depth ambient encoder albedo pose pose_encoder     \
---load_weights_folder       /external/10g/dense2/fs1/students/stewal/models/Gated2Gated/final_model_exp-19_weights_4
+--load_weights_folder       /external/10g/dense2/fs1/students/stewal/models/Gated2Gated/final_model_exp-19_weights_4 \
 --exp_num                   0 \
 --height                    512 \
 --width                     1024 \
@@ -24,7 +24,7 @@ python src/train.py \
 --max_depth                 100.0 \
 --dataset                   gatedstereo \
 --split                     gatedstereo \
---batch_size                4 \
+--batch_size                2 \
 --num_workers               4 \
 --learning_rate             2e-4 \
 --num_epochs                20 \
@@ -44,4 +44,4 @@ python src/train.py \
 --intensity_mask \
 --passive_supervision \
 --min_depth 0.1 \
---max_depth 200.
+--max_depth 200. 

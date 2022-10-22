@@ -13,6 +13,7 @@ import cv2
 
 import json
 import glob
+from tqdm import tqdm
 
 
 mapx = np.load('src/calib_eqc/mapx_gated_left.npz')['arr_0']
@@ -90,7 +91,14 @@ class GatedStereoDataset(data.Dataset):
         self.width = width
         self.num_scales = num_scales
         self.img_ext = img_ext
-        self.json_path = 'src/docs/recording_info_gatedstereo.json'
+        self.json_file = 'src/docs/recording_info_gatedstereo.json'
+
+        self.full_res_shape = (1280, 720)
+        self.crop_size_h, self.crop_size_w = int((self.full_res_shape[1]-self.height)/2), int((self.full_res_shape[0]-self.width)/2),
+
+        self.frame_idxs = frame_idxs
+
+        self.is_train = is_train
 
         print("Loading gated type info from JSON file {} ....".format(self.json_file))
         with open(self.json_file, 'r') as fh:
@@ -100,14 +108,6 @@ class GatedStereoDataset(data.Dataset):
         print("Loading Filenames ...")
         self.filenames_dicts = self.get_filenames_dicts()
         print("Loading complete.")
-
-
-        self.full_res_shape = (1280, 720)
-        self.crop_size_h, self.crop_size_w = int((self.full_res_shape[1]-self.height)/2), int((self.full_res_shape[0]-self.width)/2),
-
-        self.frame_idxs = frame_idxs
-
-        self.is_train = is_train
 
         self.loader = gated_loader
         self.interp = Image.ANTIALIAS
@@ -135,7 +135,7 @@ class GatedStereoDataset(data.Dataset):
 
     def get_filenames_dicts(self):
         filenames_dicts = []
-        for filename in self.filenames:
+        for filename in tqdm(self.filenames):
             rec = filename.split(',')[0]
             idx = filename.split(',')[1]
 
@@ -149,25 +149,24 @@ class GatedStereoDataset(data.Dataset):
             for frame_idx in self.frame_idxs:
                 curr_idx = str(int(idx) + frame_idx).zfill(5) 
                 slice_paths = []
-                for slice in self.json_data['slices']:
+                for slice in self.json_data[rec]['slices']:
                     slice_paths.append(glob.glob(os.path.join(self.root_dir, rec, slice[1:].format('left'), curr_idx + '*'))[0])
                 filenames_dict['gated'][str(frame_idx)] = slice_paths
+            filenames_dicts.append(filenames_dict)
         return filenames_dicts
 
 
     def __getitem__(self, index):
-        
         inputs = {}
         do_flip = self.is_train and random.random() > 0.5
 
         # line = self.filenames[index].split()
         self.filenames_dict = self.filenames_dicts[index]
-        
-
-        inputs['frame_info'] = "{}-{}".format(self.filenames_dict['rec'],self.filenames_dicts['idx'])
+    
+        inputs['frame_info'] = "{}-{}".format(self.filenames_dict['rec'],self.filenames_dict['idx'])
 
         for frame_idx in self.frame_idxs:
-            inputs[("gated", i, -1)] = self.get_gated(frame_idx,do_flip)
+            inputs[("gated", frame_idx, -1)] = self.get_gated(frame_idx,do_flip)
 
 
         # adjusting intrinsics to match each scale in the pyramid
@@ -237,9 +236,9 @@ class GatedStereoDataset(data.Dataset):
         return gated
 
     def get_passive(self, do_flip):
-        passive_path = self.filenames_dicts['passive']
+        passive_path = self.filenames_dict['passive']
         passive = self.passive_loader(passive_path, self.crop_size_h, self.crop_size_w, img_ext=self.img_ext)
-        passive = np.clip((passive - 87./1023.)* self.json_data[self.filenames_dicts['rec']]['passive_factor'], 0., 1.)
+        passive = np.clip((passive - 87./1023.)* self.json_data[self.filenames_dict['rec']]['passive_factor'], 0., 1.)
         if do_flip:
             passive = np.fliplr(passive).copy()
         passive = np.expand_dims(passive, 0).astype(np.float32)
@@ -260,10 +259,7 @@ class GatedStereoDataset(data.Dataset):
 
 
     def check_depth(self):
-        sample = self.filenames[0].split(',')
-        rec = sample[0]
-        frame_index = sample[1]
-        lidar_filename = glob.glob(os.path.join(self.root_dir, rec, self.json_data['lidar'][1:], frame_index + '*'))[0]
+        lidar_filename = self.filenames_dicts[0]['lidar']
         return os.path.isfile(lidar_filename)
 
 
