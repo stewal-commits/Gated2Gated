@@ -13,6 +13,8 @@ from layers import disp_to_depth
 # from options import MonodepthOptions
 import networks
 import argparse
+import glob
+import json
 
 from torchvision.transforms import ToTensor
 
@@ -28,12 +30,16 @@ import PIL.Image as pil
 
 cv2.setNumThreads(0)  # This speeds up evaluation 5x on our unix systems (OpenCV 3.3.1)
 
+mapx = np.load('src/calib_eqc/mapx_gated_left.npz')['arr_0']
+mapy = np.load('src/calib_eqc/mapy_gated_left.npz')['arr_0']
 
-def read_sample_files(train_samples_files):
+
+def read_sample_files(train_samples_files, gatedstereo=False):
     samples = []
     with open(train_samples_files, 'r') as f:
         samples += f.read().splitlines()
-    samples = [sample.replace(',', '_') for sample in samples]
+    if not gatedstereo:
+        samples = [sample.replace(',', '_') for sample in samples]
     return samples
 
 
@@ -80,9 +86,15 @@ def read_img(img_path,
     normalizer = 2 ** num_bits - 1.
 
     for gate_id in range(3):
-        path = img_path.format(gate_id)
+        if dataset == 'gatedstereo':
+            path = img_path[gate_id]
+        else:
+            path = img_path.format(gate_id)
         assert os.path.exists(path), "No such file : %s" % path
         img = cv2.imread(path, cv2.IMREAD_UNCHANGED)
+        if dataset == 'gatedstereo':
+            img = cv2.remap(img, mapx, mapy, cv2.INTER_AREA)
+
         img = img[((img.shape[0] - crop_height) // 2):((img.shape[0] + crop_height) // 2),
               ((img.shape[1] - crop_width) // 2):((img.shape[1] + crop_width) // 2)]
         img = img.copy()
@@ -97,13 +109,15 @@ def evaluate(opt):
     """Evaluates a pretrained model using a specified test set
     """
     MIN_DEPTH = 3.0
-    MAX_DEPTH = 80.0
+    MAX_DEPTH = 200.0
 
     # Load dataset items
     dataset_dir = opt.data_dir
     eval_files_name = os.path.basename(opt.eval_files_path).replace('.txt', '')
-
-    val_ids = sorted(read_sample_files(opt.eval_files_path))
+    if opt.dataset == 'gatedstereo':
+        val_ids = sorted(read_sample_files(opt.eval_files_path, gatedstereo=True))
+    else:
+        val_ids = sorted(read_sample_files(opt.eval_files_path))
     if opt.dataset == 'g2d':
         lidar_paths = [os.path.join(dataset_dir, "depth_hdl64_gated_compressed", "{}.npz".format(_id)) for _id in
                        val_ids]
@@ -112,6 +126,19 @@ def evaluate(opt):
         lidar_paths = [os.path.join(dataset_dir, "lidar_hdl64_strongest_filtered_gated", "{}.npz".format(_id)) for _id
                        in val_ids]
         gated_paths = [os.path.join(dataset_dir, "gated{}_10bit", "{}.{}".format(_id,opt.img_ext)) for _id in val_ids]
+    elif opt.dataset == 'gatedstereo':
+        json_path = 'src/docs/recording_info_gatedstereo.json'
+        with open(json_path, 'r') as fh:
+            json_data = json.load(fh)
+        lidar_paths = [glob.glob(os.path.join(dataset_dir, id.split(',')[0], json_data[id.split(',')[0]]['lidar'][1:], id.split(',')[1] + '*'))[0] for id in val_ids]
+        gated_paths = []
+        for id in val_ids:
+            rec = id.split(',')[0]
+            sample = id.split(',')[1]
+            paths = []
+            for slice in json_data[rec]['slices']:
+                paths.append(glob.glob(os.path.join(dataset_dir, rec, slice[1:].format('left'), sample + '*'))[0])
+            gated_paths.append(paths)
 
     # Load weights
     assert os.path.isdir(opt.load_weights_folder), "Cannot find a folder at {}".format(opt.load_weights_folder)
@@ -145,9 +172,13 @@ def evaluate(opt):
 
     with torch.no_grad():
         for lidar_path, gated_path in tzip(lidar_paths, gated_paths):
+            
+            if not opt.dataset == 'gatedstereo':
+                img_id = os.path.basename(gated_path).split('.')[0]
+            else:
+                img_id = '{}_{}'.format(lidar_path.split('/')[-5], lidar_path.split('/')[-1].split('_')[0])
 
-            img_id = os.path.basename(gated_path).split('.')[0]
-
+           
             gated_img = read_img(gated_path, crop_height=opt.height, crop_width=opt.width, dataset=opt.dataset)
 
             lidar = np.load(lidar_path)['arr_0']
@@ -199,8 +230,18 @@ def evaluate(opt):
                 input_output = pil.fromarray(input_output.astype(np.uint8))
                 depth_map_color.save(os.path.join(opt.results_dir, 'gated2gated_imgs', '{}.jpg'.format(img_id)))
                 input_output.save(os.path.join(opt.results_dir, 'all', '{}.jpg'.format(img_id)))
-
                 np.savez_compressed(os.path.join(opt.results_dir, 'gated2gated', '{}'.format(img_id)), pred_depth)
+
+            
+            if opt.dataset == 'gatedstereo':
+                result_folder = 'gated2gated_pretrained_stf'
+
+                results_dir = lidar_path.split('/lidar_vls128_projected')[0]
+                
+                
+                if not os.path.exists(os.path.join(results_dir, result_folder)):
+                    os.mkdir(os.path.join(results_dir, result_folder))
+                np.savez_compressed(os.path.join(results_dir, result_folder, '{}'.format(img_id)), pred_depth)
 
             # check whether groundtruth depthmap contains any lidar point
 
@@ -238,11 +279,11 @@ def evaluate(opt):
         for i in range(res.shape[0]):
             res_str += '{}={:.2f} \n'.format(metric_str[i], res[i])
         print(res_str)
-        with open(os.path.join(opt.results_dir, '{}_results.txt'.format(eval_files_name)), 'w') as f:
-            f.write(res_str)
-        with open(os.path.join(opt.results_dir, '{}_results.tex'.format(eval_files_name)), 'w') as f:
-            f.write(' & '.join(metric_str) + '\n')
-            f.write(' & '.join(['{:.2f}'.format(r) for r in res]))
+        # with open(os.path.join(opt.results_dir, '{}_results.txt'.format(eval_files_name)), 'w') as f:
+        #     f.write(res_str)
+        # with open(os.path.join(opt.results_dir, '{}_results.tex'.format(eval_files_name)), 'w') as f:
+        #     f.write(' & '.join(metric_str) + '\n')
+        #     f.write(' & '.join(['{:.2f}'.format(r) for r in res]))
 
         # Print and save binned metrics
         if opt.binned_metrics:
@@ -308,7 +349,7 @@ if __name__ == "__main__":
                          help="Path to file with validation/evaluation file names.",
                          required=True)
     options.add_argument("--dataset", default='stf',
-                         choices=['stf', 'g2d'],
+                         choices=['stf', 'g2d', 'gatedstereo'],
                          help="Which dataset is used for evaluation.")
     options.add_argument('--g2d_crop', help='Use same crop as used for Evaluation in Gated2Depth Paper.',
                          action='store_true', required=False)

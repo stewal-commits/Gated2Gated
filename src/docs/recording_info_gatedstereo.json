@@ -1,0 +1,898 @@
+{
+    "2022-10-11_18-54-41": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "night", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type6/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 0.40178904211703315, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-11_18-58-55": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "night", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type6/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 0.40178904211703315, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-11_19-00-15": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "night", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type6/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 0.40178904211703315, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-11_19-19-55": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "night", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type6/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 0.40178904211703315, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-11_19-28-17": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "night", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type6/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 0.40178904211703315, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-11_19-32-10": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "night", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type6/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 0.40178904211703315, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-11_19-33-42": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "night", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type6/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 0.40178904211703315, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-11_19-39-38": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "night", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type6/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 0.40178904211703315, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-11_20-08-01": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "night", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type6/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 0.40178904211703315, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-11_20-11-49": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "night", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type6/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 0.40178904211703315, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-11_20-26-31": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "night", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type6/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 0.40178904211703315, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-11_20-41-20": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "night", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type6/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 0.40178904211703315, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-11_20-48-19": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "night", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type6/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 0.40178904211703315, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-12_15-25-15": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "day", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type7/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 1.497222222222222, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-12_15-28-31": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "day", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type7/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 1.497222222222222, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-12_15-30-00": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "day", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type7/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 1.497222222222222, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-12_15-33-43": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "day", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type7/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 1.497222222222222, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-12_15-34-31": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "day", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type7/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 1.497222222222222, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-12_15-38-58": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "day", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type7/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 1.497222222222222, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-12_15-46-48": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "day", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type7/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 1.497222222222222, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-12_15-50-28": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "day", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type7/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 1.497222222222222, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-12_15-59-48": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "day", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type7/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 1.497222222222222, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-12_16-05-23": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "day", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type7/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 1.497222222222222, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-12_16-39-32": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "day", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type7/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 1.497222222222222, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-12_22-13-21": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "night", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type6/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 0.40178904211703315, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-12_22-23-48": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "night", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type6/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 0.40178904211703315, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-12_22-37-01": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "night", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type6/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 0.40178904211703315, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-12_22-45-11": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "night", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type6/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 0.40178904211703315, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-12_22-50-59": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "night", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type6/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 0.40178904211703315, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-13_00-19-36": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "night", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type6/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 0.40178904211703315, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-13_09-38-03": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "day", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type7/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 1.497222222222222, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-13_09-43-38": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "day", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type7/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 1.497222222222222, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-13_09-54-36": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "day", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type7/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 1.497222222222222, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-13_09-59-44": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "day", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type7/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 1.497222222222222, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-13_10-04-41": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "day", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type7/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 1.497222222222222, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-13_10-10-30": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "day", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type7/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 1.497222222222222, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-13_10-12-10": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "day", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type7/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 1.497222222222222, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-13_10-13-55": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "day", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type7/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 1.497222222222222, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-13_10-18-51": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "day", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type7/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 1.497222222222222, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-13_10-22-23": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "day", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type7/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 1.497222222222222, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-13_10-25-39": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "day", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type7/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 1.497222222222222, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-13_10-34-55": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "day", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type7/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 1.497222222222222, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-13_10-47-39": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "day", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type7/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 1.497222222222222, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-13_10-53-00": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "day", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type7/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 1.497222222222222, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-13_11-46-59": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "day", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type7/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 1.497222222222222, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-14_00-00-53": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "night", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type6/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 0.40178904211703315, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-14_00-07-17": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "night", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type6/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 0.40178904211703315, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-14_00-18-51": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "night", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type6/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 0.40178904211703315, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-14_02-20-03": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "night", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type6/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 0.40178904211703315, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-14_02-24-05": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "night", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type6/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 0.40178904211703315, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-14_02-26-34": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "night", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type6/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 0.40178904211703315, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-14_02-29-16": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "night", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type6/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 0.40178904211703315, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-14_02-39-58": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "night", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type6/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 0.40178904211703315, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-14_02-41-24": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "night", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type6/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 0.40178904211703315, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-14_02-44-44": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "night", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type6/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 0.40178904211703315, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }, 
+    "2022-10-14_02-48-03": {
+        "color": "/cam_stereo/{}/image_raw", 
+        "daytime": "night", 
+        "gated_passive_topic": "/framegrabber/{}/bwv/type6/image_raw", 
+        "lidar": "/framegrabber/left/lidar_vls128_projected", 
+        "passive_factor": 0.40178904211703315, 
+        "slices": [
+            "/framegrabber/{}/bwv/type8/image_raw", 
+            "/framegrabber/{}/bwv/type9/image_raw", 
+            "/framegrabber/{}/bwv/type10/image_raw"
+        ], 
+        "slices_passive": [
+            "/framegrabber/{}/bwv/type6/image_raw", 
+            "/framegrabber/{}/bwv/type7/image_raw"
+        ]
+    }
+}

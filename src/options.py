@@ -130,11 +130,11 @@ class GatedOptions:
                                     type=str,
                                     help="dataset to train on",
                                     default="gated",
-                                    choices=["gated"])
+                                    choices=["gated", "gatedstereo"])
         self.parser.add_argument("--split",
                                     type=str,
                                     help="which training split to use",
-                                    choices=["gated2gated"],
+                                    choices=["gated2gated", "gatedstereo"],
                                     default="gated2gated")
         self.parser.add_argument("--dropout",
                                     type=float,

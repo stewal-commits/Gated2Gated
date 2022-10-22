@@ -1,4 +1,5 @@
 from __future__ import absolute_import, division, print_function
+from fileinput import filename
 
 import numpy as np
 import time
@@ -149,13 +150,20 @@ class Trainer:
         print("Training is using:\n  ", self.device)
 
         # data
-        datasets_dict = {"gated":      dataset.GatedDataset}
+        datasets_dict = {"gated":      dataset.GatedDataset,
+                        "gated": dataset.GatedStereoDataset}
         self.dataset = datasets_dict[self.opt.dataset]
+        if self.opt.split != 'gatedstereo':
+            fpath = os.path.join(os.path.dirname(__file__), "splits", self.opt.split, "{}_files.txt")
+            train_filenames = readlines(fpath.format("train"))
+            val_filenames = readlines(fpath.format("val"))
+        else:
+            fpath = os.path.join(os.path.dirname(__file__), "splits", self.opt.split, 'train_gatedstereo.txt')
+            filenames = readlines(fpath)
+            train_filenames = filenames[0: int(len(filenames) * 0.9)]
+            val_filenames = filenames[int(len(filenames) * 0.9):]
 
-        fpath = os.path.join(os.path.dirname(__file__), "splits", self.opt.split, "{}_files.txt")
-
-        train_filenames = readlines(fpath.format("train"))
-        val_filenames = readlines(fpath.format("val"))
+        
 
 
         num_train_samples = len(train_filenames)
@@ -233,6 +241,7 @@ class Trainer:
         print("Using split:\n  ", self.opt.split)
         print("There are {:d} training items and {:d} validation items\n".format(
             len(train_dataset), len(val_dataset)))
+        sdfsdfsdf
 
         self.save_opts()
 
